@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <main>
     <MainVue />
     <AboutVue />
     <Experience />
     <Portfolio />
     <Contact />
     <Footer />
-  </div>
+  </main>
 </template>
 
 <script>
