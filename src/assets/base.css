@@ -8,6 +8,7 @@
   --gray-color: #979797;
   --text-main-color: #3a3647;
   --transition: 0.3s;
+  --btn-active: translateY(3px);
 }
 
 * {
@@ -25,6 +26,10 @@
   margin: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color);
 }
@@ -32,4 +37,9 @@ body {
 section {
   width: 100%;
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main-color);
 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="main-section">
+  <section class="main-section" id="home">
     <div class="container">
       <div class="text-main-contents">
         <h4>WEB FRONTEND DEVELOPER</h4>
@@ -56,5 +56,9 @@ export default {};
 
 .text-main-contents .talk-btn:hover {
   background: var(--main-color-hover);
+}
+
+.text-main-contents .talk-btn:active {
+  transform: var(--btn-active);
 }
 </style>
