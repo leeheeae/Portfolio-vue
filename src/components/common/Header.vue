@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
 .header {
-  width: 100%;
+  width: 100%;                      
   padding: 1rem;
   display: flex;
   align-items: center;
