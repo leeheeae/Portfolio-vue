@@ -18,6 +18,7 @@
   display: flex;
   /* justify-content: center; */
   align-items: center;
+  background: url('@/assets/imgaes/bg.png') cover;
 }
 
 .waveItem {

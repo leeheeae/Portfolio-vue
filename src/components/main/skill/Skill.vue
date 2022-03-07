@@ -16,8 +16,6 @@
           </ul>
         </div>
 
-        <hr />
-
         <div class="back">
           <div class="icon"></div>
           <h2>Backend Tools</h2>
@@ -26,8 +24,6 @@
             <li>MySQL</li>
           </ul>
         </div>
-
-        <hr />
 
         <div class="design">
           <div class="icon"></div>
@@ -53,12 +49,12 @@ export default {
 </script>
 
 <style scoped>
-hr {
-  margin: 3rem 0;
-  border-color: #e6e6e6;
-}
 .contents {
   margin-top: 4rem;
+}
+
+.contents > div {
+  margin: 5rem 0;
 }
 .contents h2 {
   font-size: 1.3rem;
