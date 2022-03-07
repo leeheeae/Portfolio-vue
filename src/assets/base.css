@@ -21,9 +21,11 @@
 
 .container {
   width: 100%;
-  padding: 5rem;
-  max-width: 1600px;
+  padding: 6rem;
+  max-width: 1400px;
   margin: auto;
+  /* background: rgba(255 255 255 / 40%);
+  border-radius: 1rem; */
 }
 
 html {
@@ -31,12 +33,11 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
 }
 
 section {
   width: 100%;
-  min-height: 100vh;
 }
 
 a {

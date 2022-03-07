@@ -15,16 +15,14 @@ export default {
 </script>
 
 <style scoped>
-.section-title.textType {
-  display: flex;
-  justify-content: center;
-}
 .section-title h1 {
   font-size: 4.4rem;
   font-weight: 800;
+  user-select: none;
 }
 .section-title h1:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 1px #000;
+  margin-bottom: 6px;
 }
 </style>

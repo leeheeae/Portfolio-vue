@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <div class="logo">LEEHEEAE</div>
+    <div class="logo">
+      <img src="@/assets/images/hand.svg" alt="" /> LEEHEEAE
+    </div>
     <div class="menu-btn"><IconMenuVue /></div>
   </header>
 </template>
@@ -17,8 +19,8 @@ export default {
 
 <style scoped>
 .header {
-  width: 100%;                      
-  padding: 1rem;
+  width: 100%;
+  padding: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,8 +30,31 @@ export default {
 }
 
 .header .logo {
-  font-size: 1.4rem;
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  user-select: none;
+}
+.header .logo img {
+  width: 2.1rem;
+  margin-right: 8px;
+}
+.header .logo:hover img {
+  transform-origin: bottom;
+  animation: rotateAni 0.8s forwards infinite;
+}
+
+@keyframes rotateAni {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .header .menu-btn {

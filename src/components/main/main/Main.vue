@@ -1,6 +1,5 @@
 <template>
   <section class="main-section" id="home">
-    <WaveItem />
     <div class="container">
       <div class="text-main-contents">
         <h4>WEB FRONTEND DEVELOPER</h4>
@@ -13,13 +12,9 @@
   </section>
 </template>
 
-<script>
-import WaveItem from "@/components/svg/WaveItem.vue";
-export default { components: { WaveItem } };
-</script>
-
 <style scoped>
 .main-section {
+  min-height: 100vh;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -37,30 +32,23 @@ export default { components: { WaveItem } };
   font-size: 1.2rem;
   font-weight: 400;
   color: var(--gray-color);
-  margin-bottom: 1rem;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
 .text-main-contents h1 {
-  font-size: 3.6rem;
-  font-weight: 900;
-  color: var(--text-main-color);
+  font-size: 4.4rem;
+  font-weight: 700;
   line-height: 1.4;
-  text-align: center;
-}
-
-.text-main-contents h1 span {
-  color: var(--black-color);
 }
 
 .text-main-contents .talk-btn {
   display: block;
-  margin: 3.2rem auto 0;
+  margin-top: 4rem;
   text-align: center;
   padding: 1.2rem 4rem;
   border-radius: 3rem;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: white;
   background: var(--main-color);
   transition: var(--transition);
