@@ -1,9 +1,15 @@
 <template>
-  <div>A passionate developer who wants to run together</div>
+  <HomeContainerVue />
+  <ScrollIconVue />
 </template>
 
 <script>
-export default {};
+import HomeContainerVue from "../components/mainPage/HomeContainer.vue";
+import ScrollIconVue from "../components/common/ScrollIcon.vue";
+
+export default {
+  components: { HomeContainerVue, ScrollIconVue },
+};
 </script>
 
 <style>

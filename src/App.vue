@@ -1,10 +1,15 @@
 <template>
+  <HeaderVue />
   <router-view></router-view>
 </template>
 
 <script>
+import HeaderVue from "./components/common/Header.vue";
+
 export default {
-  components: {},
+  components: {
+    HeaderVue,
+  },
 };
 </script>
 
@@ -13,6 +18,6 @@ export default {
 @import url("@/assets/base.css");
 
 body {
-  
+  background-color: var(--main-bg-color);
 }
 </style>
