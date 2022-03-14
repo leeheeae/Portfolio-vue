@@ -1,15 +1,8 @@
-<template>
-  <HeaderVue />
-  <RouterView />
-</template>
+<template></template>
 
 <script>
-import HeaderVue from "@/components/common/Header.vue";
-
 export default {
-  components: {
-    HeaderVue,
-  },
+  components: {},
 };
 </script>
 
