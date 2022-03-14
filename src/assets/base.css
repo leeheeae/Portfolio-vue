@@ -1,102 +1,44 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+/* _______________Font_________________ */
+/* Font - import*/
+@import url(//db.onlinewebfonts.com/c/150037e11f159dca84bc4c04549094b6?family=Averta-Regular);
+
 @font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff')
-    format('woff');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff')
-    format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+  font-family: 'SpoqaHanSansNeo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff')
     format('woff');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff')
+  font-family: 'SpoqaHanSansNeo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff')
     format('woff');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff')
+  font-family: 'SpoqaHanSansNeo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Medium.woff')
     format('woff');
   font-weight: 600;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff')
-    format('woff');
-  font-weight: 800;
-  font-style: normal;
+
+/* Font - class */
+.Averta {
+  font-family: 'Averta-Regular';
 }
-@font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff')
-    format('woff');
-  font-weight: 900;
-  font-style: normal;
-}
+
+/*_______________ color _________________*/
 
 :root {
-  --main-color: #6133f3;
-  --main-color-hover: #4517dd;
-  --bg-color: #f8f7f7;
-  --black-color: #18161d;
-  --gray-color: #979797;
-  --text-main-color: #3a3647;
-  --transition: 0.3s;
-  --btn-active: translateY(3px);
-}
-
-* {
-  /* font-family: 'Noto Sans KR', sans-serif; */
-  font-family: 'Pretendard';
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: var(--black-color);
-}
-
-.container {
-  width: 100%;
-  padding: 6rem;
-  max-width: 1500px;
-  margin: auto;
-  /* background: rgba(255 255 255 / 40%);
-  border-radius: 1rem; */
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  /* background-color: var(--bg-color); */
-}
-
-section {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-main-color);
-}
-
-img {
-  width: 100%;
-  object-fit: cover;
-  display: block;
+  --background-color: #192024;
+  --background-item-color: #b8434c;
+  --black-color: #192024;
+  --white-color: #fafafa;
+  --gray-color: #7a7a7d;
+  --point-color: #ffd167;
+  --transition: transition: 0.3s;
 }
