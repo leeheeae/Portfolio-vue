@@ -26,7 +26,7 @@ export default {};
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  padding: 2rem 1.6rem;
+  padding: 10rem 2.4rem;
 }
 .main-text {
   font-size: 1.6rem;
