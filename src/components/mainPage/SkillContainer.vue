@@ -100,7 +100,7 @@ export default {};
   margin-bottom: 10px;
 }
 .tool-list .comment {
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 300;
   line-height: 1.7;
   color: var(--white-color);
