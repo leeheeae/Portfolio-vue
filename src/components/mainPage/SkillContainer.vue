@@ -65,14 +65,9 @@ export default {};
 
 <style scoped>
 .skill-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 10rem 2.4rem;
   background: rgba(255, 255, 255, 0.1);
 }
-.text-box .main-text {
+.main-text {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.4;
@@ -121,5 +116,59 @@ export default {};
 }
 .tool-list .skill-list > li:last-child {
   margin-right: 0;
+}
+
+/* media */
+@media (min-width: 350px) {
+  .main-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 460px) {
+  .main-text {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-text {
+    font-size: 2.2rem;
+  }
+
+  .text-box .sub-text {
+    font-size: 0.94rem;
+  }
+
+  .text-box .tag-list li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tool-list {
+    flex-direction: row;
+  }
+  .tool-list > li:nth-child(2) {
+    margin: 0 2% 1rem;
+  }
+  .tool-list .skill-list > li {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-text {
+    font-size: 2.4rem;
+  }
+  .sub-text {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .main-text {
+    font-size: 2.8rem;
+  }
 }
 </style>

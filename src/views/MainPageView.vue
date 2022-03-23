@@ -2,18 +2,19 @@
   <div class="main-page">
     <bgItemVue :itemTop="'0%'" :itemLeft="'5vw'" :itemOpacity="0.3" />
     <bgItemVue :itemTop="'12%'" :itemLeft="'80vw'" :itemOpacity="0.2" />
-    <bgItemVue :itemTop="'18%'" :itemLeft="'10vw'" :itemOpacity="0.3" />
+    <bgItemVue :itemTop="'20%'" :itemLeft="'10vw'" :itemOpacity="0.3" />
     <bgItemVue :itemTop="'35%'" :itemLeft="'70vw'" :itemOpacity="0.2" />
     <bgItemVue :itemTop="'48%'" :itemLeft="'-8vw'" :itemOpacity="0.3" />
     <bgItemVue :itemTop="'60%'" :itemLeft="'60vw'" :itemOpacity="0.2" />
-    <bgItemVue :itemTop="'72%'" :itemLeft="'20vw'" :itemOpacity="0.3" />
+    <bgItemVue :itemTop="'72%'" :itemLeft="'10vw'" :itemOpacity="0.3" />
     <bgItemVue :itemTop="'80%'" :itemLeft="'100vw'" :itemOpacity="0.3" />
-    <bgItemVue :itemTop="'92%'" :itemLeft="'15vw'" :itemOpacity="0.3" />
+    <bgItemVue :itemTop="'89%'" :itemLeft="'80vw'" :itemOpacity="0.1" />
+    <bgItemVue :itemTop="'94%'" :itemLeft="'15vw'" :itemOpacity="0.2" />
     <HomeContainerVue />
     <AboutContainerVue />
-    <ScrollIconVue />
     <SkillContainerVue />
     <ProjectContainerVue />
+    <ScrollIconVue />
     <FooterVue />
   </div>
 </template>
@@ -46,5 +47,37 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10rem 2rem;
+}
+
+/* media */
+@media (min-width: 460px) {
+  section {
+    padding: 10rem 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 10rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 10rem 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    padding: 10rem 4rem;
+  }
 }
 </style>

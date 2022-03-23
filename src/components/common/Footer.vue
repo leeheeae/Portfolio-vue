@@ -8,12 +8,7 @@
       <div class="contact">
         <div class="email Averta">Chromeee@daum.net</div>
         <div class="number Averta">010-2332-5270</div>
-      </div>
-
-      <div class="sns">
-        <div class="github"></div>
-        <div class="github"></div>
-        <div class="github"></div>
+        <div class="github icon"></div>
       </div>
     </div>
   </footer>
@@ -33,13 +28,13 @@ export default {};
 .text-box {
   text-align: center;
 }
-.text-box .main-text {
+.main-text {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.4;
   color: var(--main-text-color);
 }
-.text-box .sub-text {
+.sub-text {
   font-size: 0.9rem;
   line-height: 2;
   color: var(--gray-color-02);
@@ -47,9 +42,12 @@ export default {};
 }
 .contact {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .contact > div {
-  display: inline-flex;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--gray-color-02);
@@ -61,15 +59,30 @@ export default {};
 .contact > div:hover {
   color: var(--white-color);
 }
-.sns {
-  display: flex;
-  justify-content: center;
-}
-.sns > div {
-  width: 40px;
-  height: 40px;
+
+.contact .icon {
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 50%;
-  background: #fff;
-  margin: 0 8px;
+  background: var(--gray-color-02);
+}
+
+/* media */
+@media (min-width: 768px) {
+  .main-text {
+    font-size: 2.2rem;
+  }
+  .contact {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-text {
+    font-size: 2.4rem;
+  }
+  .sub-text {
+    font-size: 1rem;
+  }
 }
 </style>

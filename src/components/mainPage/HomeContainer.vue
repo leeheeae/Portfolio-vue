@@ -21,12 +21,7 @@ export default {};
 
 <style scoped>
 .home-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   min-height: 100vh;
-  padding: 10rem 2.4rem;
 }
 .main-text {
   font-size: 1.6rem;

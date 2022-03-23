@@ -48,21 +48,13 @@ export default {};
 </script>
 
 <style scoped>
-.project-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 10rem 2.4rem;
-}
-
-.text-box .main-text {
+.main-text {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.4;
   color: var(--main-text-color);
 }
-.text-box .sub-text {
+.sub-text {
   font-size: 0.9rem;
   line-height: 2;
   color: var(--gray-color-02);
@@ -122,5 +114,61 @@ export default {};
 }
 .more-btn button {
   color: var(--white-color);
+}
+
+/* media */
+@media (min-width: 350px) {
+  .main-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 460px) {
+  .main-text {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-text {
+    font-size: 2.2rem;
+  }
+
+  .text-box .sub-text {
+    font-size: 0.94rem;
+  }
+
+  .text-box .tag-list li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-list {
+    justify-content: space-between;
+  }
+  .project-list > li {
+    position: relative;
+    width: 49%;
+    height: 340px;
+    margin-bottom: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-text {
+    font-size: 2.4rem;
+  }
+  .sub-text {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .main-text {
+    font-size: 2.8rem;
+  }
+  .project-list > li {
+    height: 360px;
+  }
 }
 </style>

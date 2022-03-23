@@ -8,9 +8,11 @@
         </h2>
         <p class="sub-text">
           UX/UX 디자이너로 웹 제작을 처음 시작했으며, 그 경험을 화면에 보여지는
-          부분에 대한 작업에 대한 자신감이 있습니다. 디자인과 개발 간의 흐름을
-          이해하고 디자이너, 개발자와의 원활한 소통이 가능합니다. 다양한 경험을
-          통해 생기게 되는 문제를 해결하기 위해 꾸준히 고민하고 노력합니다
+          부분에 대한 작업에 대한 자신감이 있습니다.<br />
+          디자인과 개발 간의 흐름을 이해하고 디자이너, 개발자와의 원활한 소통이
+          가능합니다.<br />
+          다양한 경험을 통해 생기게 되는 문제를 해결하기 위해 꾸준히 고민하고
+          노력합니다.
         </p>
         <ul class="tag-list">
           <li>이희애</li>
@@ -24,7 +26,6 @@
         <div></div>
         <div></div>
         <div></div>
-        <div></div>
       </div>
     </div>
   </section>
@@ -35,16 +36,7 @@ export default {};
 </script>
 
 <style scoped>
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  /* min-height: 100vh; */
-  /* padding: 2rem 1.6rem; */
-  padding: 10rem 2.4rem;
-}
-.text-box .main-text {
+.main-text {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.4;
@@ -77,9 +69,64 @@ export default {};
 }
 .img-box div {
   width: 100%;
-  height: 120px;
+  height: 200px;
   margin-bottom: 5%;
   border-radius: 8px;
   background: #ddd;
+}
+
+/* media */
+@media (min-width: 350px) {
+  .main-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 460px) {
+  .main-text {
+    font-size: 2rem;
+  }
+  .img-box div {
+    height: 260px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-text {
+    font-size: 2.4rem;
+  }
+
+  .text-box .sub-text {
+    font-size: 0.94rem;
+  }
+
+  .text-box .tag-list li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-box div {
+    width: 31%;
+    height: 260px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-text {
+    font-size: 2.6rem;
+  }
+  .sub-text {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .main-text {
+    font-size: 3rem;
+  }
+  .img-box div {
+    width: 31%;
+    height: 280px;
+  }
 }
 </style>
